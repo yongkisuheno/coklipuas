@@ -3,10 +3,9 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","                    BANDIT VOCER\n");
-echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("white","                    Never Extinct         \n");
-echo color("white","                  Format Kode 62*** \n");
+echo color("red","                       JHON COFFEE\n");
+echo color("white","           Time  : ".ENTENONO COK('[d-m-Y] [H:i:s]')."   \n");
+echo color("white","                    Never Extinct         \n");                
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("white"," NOMOR  : ");
@@ -48,14 +47,16 @@ echo color("white","                  Format Kode 62*** \n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("white","CLAIM A..");
+        echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬NYOHH VOUCHERMU▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo "\n".color("white","GASS 1..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(5);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
+        reff:
+        $code1 = '("referral_code":"G-CVNN2Q5")';    
+        $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","Message: ".$message);
@@ -63,8 +64,8 @@ echo color("white","                  Format Kode 62*** \n");
         }else{
         echo "\n".color("white"," Message: ".$message);
 	gocar:
-        echo "\n".color("white"," CLAIM B.. ");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white"," GASS 2.. ");
+        echo "\n".color("white"," sabar cok");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(35);
@@ -77,8 +78,8 @@ echo color("white","                  Format Kode 62*** \n");
         }else{
         echo "\n".color("white"," Message: ".$message);
         gofood:
-        echo "\n".color("white"," CLAIM C..");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white"," GASS 3..");
+        echo "\n".color("white"," Sabar cok");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
@@ -86,8 +87,8 @@ echo color("white","                  Format Kode 62*** \n");
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("white"," Message: ".$message);
-        echo "\n".color("white"," VOCER COLI.");
-        echo "\n".color("white"," Please wait");
+        echo "\n".color("white"," NYOHH VOUCERMU.");
+        echo "\n".color("white"," sabar cok");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
@@ -180,20 +181,20 @@ echo color("white","                  Format Kode 62*** \n");
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("white","-] GAGAL!!!\n");
+         echo color("white","-] COBA MANEH!!!\n");
          }
          }
          }
          }else{
-         echo color("white","-] OTP SALAH");
+         echo color("white","-] OTP KELIRU");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] INPUT ULANG..\n");
+         echo color("white","!] KELIRU COK..\n");
          goto otp;
          }
          }else{
-         echo color("white","-] NOMOR SALAH");
+         echo color("white","-] KELIRU COK");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] MASUKAN LAGI\n");
+         echo color("white","!] MASUKNO MANEH\n");
          goto ulang;
          }
 //  }
