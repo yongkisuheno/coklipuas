@@ -53,7 +53,7 @@ echo color("green","                  OJOK LALI NGOPI'O BROW         \n");
         echo color("white",".");
         sleep(5);
         }
-        $code1 = '("referral_code":"G-CVNN2Q5")';    
+        $code1 = '("https://gojek.page.link/referral.bot)';    
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
@@ -89,7 +89,15 @@ echo color("green","                  OJOK LALI NGOPI'O BROW         \n");
         echo "\n".color("white"," TERSERAH");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
+        }
         sleep(3);
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"STAYGOFOOD201105SC"}');
+        $message = fetch_value($code1,'"message":"','"');
+        echo "\n".color("nevy"," Message: ".$message);
+        }
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
+        $message = fetch_value($code1,'"message":"','"');
+        echo "\n".color("nevy"," Message: ".$message);
         }
         sleep(3);
         $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
