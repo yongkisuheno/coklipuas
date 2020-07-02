@@ -189,8 +189,6 @@ echo color("green","                  OJOK LALI NGOPI'O BROW         \n");
          }else{
          echo color("green","-] COBA MANEH!!!\n");
          }
-         }
-         }
          }else{
          echo color("red","-] OTP KELIRU");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
